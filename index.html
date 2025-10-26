@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yara AI Labs | Relationship-Intelligent Tools for Creators</title>
+    <meta
+      name="description"
+      content="Yara AI Labs helps independent creators — including those distributing premium and adult content — manage fan conversations with authentic AI."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yaralabs.ai" />
+    <meta property="og:title" content="Yara AI Labs" />
+    <meta
+      property="og:description"
+      content="Scale your audience, not your inbox. Relationship-intelligent AI for direct-to-fan and adult-content creators."
+    />
+    <meta property="og:image" content="assets/yara-long.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Yara AI Labs" />
+    <meta
+      name="twitter:description"
+      content="Yara AI Labs keeps every fan interaction personal while you focus on your art."
+    />
+    <meta name="twitter:image" content="assets/yara-long.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo-glow.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Space Grotesk", "Inter", "ui-sans-serif", "system-ui"],
+            },
+            colors: {
+              base: "#0A0A0A",
+              accent: {
+                start: "#A855F7",
+                mid: "#EC4899",
+                end: "#FB7185",
+              },
+            },
+            boxShadow: {
+              glow: "0 15px 60px rgba(236, 72, 153, 0.25)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #0a0a0a;
+      }
+      .gradient-border {
+        position: relative;
+      }
+      .gradient-border::after {
+        content: "";
+        position: absolute;
+        inset: -1px;
+        border-radius: inherit;
+        padding: 1px;
+        background: linear-gradient(120deg, #a855f7, #ec4899, #fb7185);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+      }
+    </style>
+  </head>
+  <body class="bg-base text-white font-sans antialiased">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+      <div class="w-[50vw] h-[50vw] bg-gradient-to-tr from-purple-900 via-fuchsia-700/60 to-pink-600/40 blur-[140px] opacity-30 -top-32 -right-10 absolute"></div>
+      <div class="w-[60vw] h-[60vw] bg-gradient-to-tr from-pink-700/40 via-purple-800/50 to-indigo-800/40 blur-[180px] opacity-25 -bottom-20 -left-20 absolute"></div>
+    </div>
+
+    <main class="relative min-h-screen">
+      <header class="px-6 md:px-12 lg:px-20 pt-10 pb-6 flex items-center justify-between">
+        <p class="text-sm uppercase tracking-[0.3em] text-white/70">Yara AI Labs</p>
+        <a
+          href="mailto:gitavahdatinia@gmail.com"
+          class="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-pink-200 transition-colors"
+        >
+          Contact
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </header>
+
+      <section class="px-6 md:px-12 lg:px-20 py-10 md:py-16 lg:py-24">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <p class="text-sm text-white/70 uppercase tracking-[0.4em]">For direct-to-fan & adult creators</p>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight">
+              Scale your audience,<br class="hidden md:block" />
+              not your inbox.
+            </h1>
+            <p class="text-lg md:text-xl text-white/80 max-w-2xl">
+              Yara AI Labs helps independent creators manage fan conversations and engagement with AI that sounds like you. Purpose-built for those who distribute premium or adult content and need every interaction to feel intentional.
+            </p>
+            <div class="flex flex-col gap-4 max-w-xl">
+              <button
+                type="button"
+                id="open-waitlist"
+                class="inline-flex items-center justify-center rounded-full px-8 py-3 bg-gradient-to-r from-accent-start via-accent-mid to-accent-end font-semibold text-base shadow-glow hover:opacity-90 transition-opacity w-full sm:w-auto"
+              >
+                Join the Waitlist
+              </button>
+              <p class="text-white/70 text-sm max-w-sm">
+                Built to keep connection human, even as you grow across private communities and direct-to-fan platforms.
+              </p>
+            </div>
+          </div>
+          <div class="relative flex justify-center">
+            <div class="absolute inset-0 bg-gradient-to-r from-accent-start/40 to-accent-end/40 blur-3xl opacity-60"></div>
+            <img src="assets/yara-long.png" alt="Yara AI Labs neon logotype" class="relative w-full max-w-md drop-shadow-2xl" />
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 md:px-12 lg:px-20 py-12">
+        <div class="max-w-5xl">
+          <div class="gradient-border rounded-3xl p-[1px]">
+            <div class="bg-white/5 rounded-3xl p-8 md:p-12 backdrop-blur">
+              <h2 class="text-2xl md:text-3xl font-semibold mb-6">About Yara</h2>
+              <p class="text-white/80 text-lg leading-relaxed">
+                Yara AI Labs builds relationship-intelligent tools for creators who connect directly with their audiences, including those monetizing adult content on subscription platforms. Our mission: make personal engagement sustainable as you grow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 md:px-12 lg:px-20 py-16">
+        <div class="flex flex-col gap-12">
+          <div>
+            <p class="text-sm text-white/60 uppercase tracking-[0.3em] mb-3">What you get</p>
+            <h2 class="text-3xl md:text-4xl font-semibold">Features that protect your energy</h2>
+          </div>
+          <div class="grid md:grid-cols-3 gap-6">
+            <article class="bg-white/5 rounded-2xl p-6 space-y-3 border border-white/5 hover:border-white/20 transition-colors">
+              <p class="text-sm uppercase tracking-[0.2em] text-white/60">Smart Replies</p>
+              <h3 class="text-xl font-semibold">Sound like you, every time</h3>
+              <p class="text-white/80">
+                AI drafts messages in your authentic tone, tailored for premium and adult-fan expectations so you approve, personalize, and send faster.
+              </p>
+            </article>
+            <article class="bg-white/5 rounded-2xl p-6 space-y-3 border border-white/5 hover:border-white/20 transition-colors">
+              <p class="text-sm uppercase tracking-[0.2em] text-white/60">Fan Insights</p>
+              <h3 class="text-xl font-semibold">See who cares about what</h3>
+              <p class="text-white/80">
+                Spot superfans, topics, and spend signals across your DMs and memberships so you can design drops that resonate and convert.
+              </p>
+            </article>
+            <article class="bg-white/5 rounded-2xl p-6 space-y-3 border border-white/5 hover:border-white/20 transition-colors">
+              <p class="text-sm uppercase tracking-[0.2em] text-white/60">Unified Inbox</p>
+              <h3 class="text-xl font-semibold">All your spaces, one flow</h3>
+              <p class="text-white/80">
+                Manage DMs, comments, tips, and voice messages from one secure space with the guardrails needed for adult-content distribution.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 md:px-12 lg:px-20 py-16">
+        <div class="max-w-4xl space-y-6">
+          <p class="text-sm text-white/60 uppercase tracking-[0.3em]">Vision</p>
+          <h2 class="text-3xl md:text-4xl font-semibold">Create more, worry less</h2>
+          <p class="text-white/80 text-lg leading-relaxed">
+            We believe creators should have time for creation, not constant messaging. Yara helps you keep every fan interaction personal while staying focused on your art and safely monetizing adult experiences on your own terms.
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <div
+      id="waitlist-modal"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 px-4 py-10"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="waitlist-title"
+    >
+      <div class="relative w-full max-w-lg rounded-3xl bg-base border border-white/10 shadow-2xl p-8 space-y-6">
+        <button
+          type="button"
+          id="close-waitlist"
+          class="absolute top-4 right-4 text-white/70 hover:text-white transition-colors"
+          aria-label="Close waitlist form"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+        <div class="space-y-2">
+          <p class="text-sm text-white/60 uppercase tracking-[0.3em]">Waitlist</p>
+          <h3 id="waitlist-title" class="text-2xl font-semibold">Get early access</h3>
+          <p class="text-white/70 text-sm">
+            Drop your info and we’ll invite you as soon as the next creator cohort opens.
+          </p>
+        </div>
+        <form id="waitlist-form" method="POST" action="https://api.web3forms.com/submit" class="space-y-4">
+          <input type="hidden" name="access_key" value="c76a6c6e-e3dd-40e7-b73a-cf33974be810" />
+          <input type="hidden" name="subject" value="New Yara waitlist subscriber" />
+          <input type="hidden" name="from_name" value="Yara Waitlist Modal" />
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="text-sm text-white/70 space-y-1">
+              First name
+              <input
+                type="text"
+                name="firstName"
+                required
+                class="w-full rounded-2xl px-4 py-3 bg-white/5 border border-white/15 focus:border-white/60 focus:outline-none text-base text-white placeholder-white/40"
+                placeholder="Gita"
+              />
+            </label>
+            <label class="text-sm text-white/70 space-y-1">
+              Last name
+              <input
+                type="text"
+                name="lastName"
+                required
+                class="w-full rounded-2xl px-4 py-3 bg-white/5 border border-white/15 focus:border-white/60 focus:outline-none text-base text-white placeholder-white/40"
+                placeholder="Vahdatinia"
+              />
+            </label>
+          </div>
+          <label class="text-sm text-white/70 space-y-1">
+            Email
+            <input
+              type="email"
+              name="email"
+              required
+              class="w-full rounded-2xl px-4 py-3 bg-white/5 border border-white/15 focus:border-white/60 focus:outline-none text-base text-white placeholder-white/40"
+              placeholder="you@example.com"
+            />
+          </label>
+          <button
+            type="submit"
+            class="w-full inline-flex items-center justify-center rounded-2xl px-6 py-3 bg-gradient-to-r from-accent-start via-accent-mid to-accent-end font-semibold text-base shadow-glow hover:opacity-90 transition-opacity"
+          >
+            Request Invite
+          </button>
+          <p id="waitlist-status" class="text-sm font-medium"></p>
+        </form>
+      </div>
+    </div>
+
+    <footer class="px-6 md:px-12 lg:px-20 py-10 border-t border-white/10 mt-10">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 text-sm text-white/70">
+        <p>© 2025 Yara AI Labs. All rights reserved.</p>
+        <div class="flex flex-wrap gap-6">
+          <a href="mailto:gitavahdatinia@gmail.com" class="hover:text-white transition-colors">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const waitlistModal = document.getElementById("waitlist-modal");
+      const waitlistForm = document.getElementById("waitlist-form");
+      const waitlistStatus = document.getElementById("waitlist-status");
+      const quickForm = document.getElementById("quick-form");
+      const quickStatus = document.getElementById("quick-form-status");
+      const openWaitlistBtn = document.getElementById("open-waitlist");
+      const closeWaitlistBtn = document.getElementById("close-waitlist");
+      let waitlistSubmitting = false;
+      let quickSubmitting = false;
+
+      const updateStatus = (element, message, variant = "idle") => {
+        if (!element) return;
+        element.textContent = message;
+        element.classList.remove("text-emerald-300", "text-rose-300", "text-white/70");
+        const nextClass =
+          variant === "success" ? "text-emerald-300" : variant === "error" ? "text-rose-300" : "text-white/70";
+        element.classList.add(nextClass);
+      };
+
+      const setStatus = (message, variant = "idle") => updateStatus(waitlistStatus, message, variant);
+      const resetStatus = () => setStatus("", "idle");
+      const setQuickStatus = (message, variant = "idle") => updateStatus(quickStatus, message, variant);
+
+      const openModal = () => {
+        if (!waitlistModal) return;
+        waitlistModal.classList.remove("hidden");
+        waitlistModal.classList.add("flex");
+        resetStatus();
+        waitlistForm?.querySelector("input")?.focus();
+      };
+
+      const closeModal = () => {
+        if (!waitlistModal) return;
+        waitlistModal.classList.add("hidden");
+        waitlistModal.classList.remove("flex");
+      };
+
+      openWaitlistBtn?.addEventListener("click", openModal);
+      closeWaitlistBtn?.addEventListener("click", closeModal);
+
+      waitlistModal?.addEventListener("click", (event) => {
+        if (event.target === waitlistModal) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !waitlistModal?.classList.contains("hidden")) {
+          closeModal();
+        }
+      });
+
+      if (waitlistForm && waitlistStatus) {
+        waitlistForm.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          if (waitlistSubmitting) return;
+
+          waitlistSubmitting = true;
+          setStatus("Sending...");
+
+          const formData = new FormData(waitlistForm);
+          const controller = new AbortController();
+          const timeoutId = window.setTimeout(() => controller.abort(), 10000);
+
+          try {
+            const response = await fetch(waitlistForm.action, {
+              method: "POST",
+              headers: {
+                Accept: "application/json",
+              },
+              body: formData,
+              signal: controller.signal,
+            });
+
+            if (!response.ok) {
+              throw new Error(`Web3Forms responded with ${response.status}`);
+            }
+
+            const data = await response.json();
+            if (!data.success) {
+              throw new Error(data.message || "Unable to send right now.");
+            }
+
+            setStatus("Thanks! We will reach out as soon as the next creator cohort opens.", "success");
+            waitlistForm.reset();
+          } catch (error) {
+            console.error(error);
+            const message =
+              error.name === "AbortError"
+                ? "Taking too long. Please check your connection or email us directly."
+                : "Something went wrong. Please try again or email us directly.";
+            setStatus(message, "error");
+          } finally {
+            window.clearTimeout(timeoutId);
+            waitlistSubmitting = false;
+          }
+        });
+      }
+
+      if (quickForm && quickStatus) {
+        quickForm.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          if (quickSubmitting) return;
+
+          quickSubmitting = true;
+          setQuickStatus("Sending...");
+
+          const formData = new FormData(quickForm);
+          const controller = new AbortController();
+          const timeoutId = window.setTimeout(() => controller.abort(), 10000);
+
+          try {
+            const response = await fetch(quickForm.action, {
+              method: "POST",
+              headers: {
+                Accept: "application/json",
+              },
+              body: formData,
+              signal: controller.signal,
+            });
+
+            if (!response.ok) {
+              throw new Error(`Web3Forms responded with ${response.status}`);
+            }
+
+            const data = await response.json();
+            if (!data.success) {
+              throw new Error(data.message || "Unable to send right now.");
+            }
+
+            setQuickStatus("Thanks for signing up! Check your inbox to confirm.", "success");
+            quickForm.reset();
+          } catch (error) {
+            console.error(error);
+            const message =
+              error.name === "AbortError"
+                ? "Taking too long. Please check your connection or email us directly."
+                : "Something went wrong. Please try again or email us directly.";
+            setQuickStatus(message, "error");
+          } finally {
+            window.clearTimeout(timeoutId);
+            quickSubmitting = false;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

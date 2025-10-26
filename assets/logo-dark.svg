@@ -1,0 +1,12 @@
+<svg width="2000" height="1506" viewBox="0 0 2000 1506" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Yara AI Labs Logo Dark</title>
+  <desc id="desc">Two overlapping chat bubbles with the word YARA in the center on a dark background.</desc>
+  <rect width="2000" height="1506" fill="#465E63" />
+  <g fill="#BACBFF">
+    <path d="M1460 260c280 0 500 158 500 390 0 162-98 270-226 316l94 182-290-128c-32 4-62 6-78 6-260 0-500-160-500-390s240-376 500-376z" opacity="0.65" />
+    <path d="M840 360c-320 0-580 170-580 410 0 170 120 300 280 350l-70 220 320-170c10 2 34 2 50 2 320 0 580-180 580-420s-260-392-580-392z" />
+  </g>
+  <text x="380" y="920" fill="#1F6B2C" font-family="Cinzel, 'Times New Roman', serif" font-size="360" font-weight="700" letter-spacing="0.08em">
+    YARA
+  </text>
+</svg>
